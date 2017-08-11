@@ -5,8 +5,7 @@ include ('DB.php');
 abstract class Main
 {
      protected $table;
-    
-    
+     
      public function readAll()
     {
         $sql = "SELECT * FROM $this->table limit 3";

@@ -23,6 +23,25 @@ spl_autoload_register(function($class){
   
     <div class="contentsection contemplete clear">
 		<div class="maincontent clear">
+    
+                    
+    <!--Pagination-->                
+     <?php 
+     /*
+    $per_page = 3;  
+    if(isset($_GET['page']))
+    {
+        $page = $_GET['page'];
+    }
+    else
+    {
+        $page = 1;
+    }
+      */
+    ?>
+    
+  <!--Pagination-->                  
+                    
                     
                       <?php
                     //check it ok or not 
@@ -51,11 +70,44 @@ spl_autoload_register(function($class){
 
 			</div>
                     
-                    <?php } ?>
+                    <?php } ?><!--End of foreach loop-->
+                    
+                    
+<!--Pagination-->
+        
+    <?php
+/*
+    echo "<span class ='pagination'><a href='index.php?page=1'>".'First Page'."</a>"
+*/
+    ?>
+
+    <?php
+/*
+    $paginate = new Pagination();
+    
+    for($i = 1; i<$paginate->$total_pages;$i++)
+    {
+        echo "<a href='index.php?page=".$i."'>".$i."</a>";
+    }
+
+    ?>
+
+    <?php
+
+    echo "<a href='index.php?page=$total_pages'>".'Last Page'."</a></span>"
+*/
+    ?>
+        
+        
+        
+<!--Pagination-->
+                    
+                    
+                    
+                    
                     <?php } else{ header("Location:404.php"); } ?>
-		</div>
-            
-            
+
+		</div>       
             <!--Side bar-->
 		<?php include('inc/sidebar.php'); ?>
             
