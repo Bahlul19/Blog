@@ -1,3 +1,5 @@
+<?php include('helpers/Format.php'); ?>  
+
 <!DOCTYPE html>
 <html>
 <head>

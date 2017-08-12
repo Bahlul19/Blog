@@ -10,7 +10,7 @@
 					</ul>
 			</div>
 			
-			<div class="samesidebar clear">
+                            <div class="samesidebar clear">
 				<h2>Latest articles</h2>
 					<div class="popular clear">
 						<h3><a href="#">Post title will be go here..</a></h3>
